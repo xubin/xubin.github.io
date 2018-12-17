@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xubin.github.io/"/>
-  <updated>2018-12-15T04:13:00.000Z</updated>
+  <updated>2018-12-17T11:04:08.000Z</updated>
   <id>https://xubin.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10设置自动休眠和睡眠解决方法</title>
+    <link href="https://xubin.github.io/2018/12/17/win10%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0%E5%92%8C%E7%9D%A1%E7%9C%A0%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://xubin.github.io/2018/12/17/win10设置自动休眠和睡眠解决方法/</id>
+    <published>2018-12-17T09:05:51.000Z</published>
+    <updated>2018-12-17T11:04:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Win10-设置自动休眠和睡眠解决方法"><a href="#Win10-设置自动休眠和睡眠解决方法" class="headerlink" title="Win10 设置自动休眠和睡眠解决方法"></a>Win10 设置自动休眠和睡眠解决方法</h1><ul><li>修改注册表regedit</li></ul><blockquote><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\</p><p>238C9FA8-0AAD-41ED-83F4-97BE242C8F20\</p><p>7bc4a2f9-d8fc-4469-b07b-33eb785aaca0</p></blockquote><hr><ul><li>修改Attributes的值为2 </li><li>进入高级电源设置，在睡眠选项中会出现“无人参与系统睡眠超时”，将默认的2分钟修改成你想要的时间</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Win10-设置自动休眠和睡眠解决方法&quot;&gt;&lt;a href=&quot;#Win10-设置自动休眠和睡眠解决方法&quot; class=&quot;headerlink&quot; title=&quot;Win10 设置自动休眠和睡眠解决方法&quot;&gt;&lt;/a&gt;Win10 设置自动休眠和睡眠解决方法&lt;/h1&gt;&lt;ul&gt;
+
+      
+    
+    </summary>
+    
+      <category term="windows" scheme="https://xubin.github.io/categories/windows/"/>
+    
+    
+      <category term="win10" scheme="https://xubin.github.io/tags/win10/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
