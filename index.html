@@ -70,6 +70,107 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-gradle" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/14/gradle/" class="article-date">
+  <time datetime="2019-02-14T04:55:51.000Z" itemprop="datePublished">2019-02-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/gradle/">gradle</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/14/gradle/">gradle</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="gradle"><a href="#gradle" class="headerlink" title="gradle"></a>gradle</h1><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="http://services.gradle.org/distributions/" target="_blank" rel="noopener">下载地址</a></p>
+<p><a href="https://gradle.org/install/" target="_blank" rel="noopener">官网</a></p>
+<p><a href="https://gradle.org/releases/" target="_blank" rel="noopener">各个版本说明</a></p>
+<h2 id="win10下安装和配置gradle"><a href="#win10下安装和配置gradle" class="headerlink" title="win10下安装和配置gradle"></a>win10下安装和配置gradle</h2><h3 id="sts安装gradle插件"><a href="#sts安装gradle插件" class="headerlink" title="sts安装gradle插件"></a>sts安装gradle插件</h3><p>Eclipse Marketplace =&gt; 搜索 buildship；然后安装</p>
+<h3 id="配置gradle"><a href="#配置gradle" class="headerlink" title="配置gradle"></a>配置gradle</h3><ul>
+<li><p>下载gradle （我用的是 4.8.1）</p>
+</li>
+<li><p>配置环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GRADLE_HOME=D:\software\gradle\gradle-4.8.1</span><br><span class="line">path=%GRADLE_HOME%\bin</span><br><span class="line"># gradle -v 查看版本</span><br><span class="line"># 配置下载目录 也可参考修改 gradle文件</span><br><span class="line">GRADLE_USER_HOME=D:\software\gradle\cache</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>另外一种配置下载目录</p>
+<p>编辑GRADLE_HOME\bin\gradle </p>
+<p>查找# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.    </p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DEFAULT_JVM_OPTS="GRADLE_OPTS=-Dgradle.user.home=D:\software\gradle\cache"</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xubin.github.io/2019/02/14/gradle/" data-id="cjs5cfkjm00025ngfm8tufs2q" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gradle配置/">gradle配置</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-node-cnpm" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/14/node-cnpm/" class="article-date">
+  <time datetime="2019-02-14T04:55:51.000Z" itemprop="datePublished">2019-02-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/node/">node</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/14/node-cnpm/">node安装cnpm配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="node-cnpm"><a href="#node-cnpm" class="headerlink" title="node-cnpm"></a>node-cnpm</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm config ls </span><br><span class="line"></span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xubin.github.io/2019/02/14/node-cnpm/" data-id="cjs5cfkjs00075ngf518mgdvh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node安装cnpm/">node安装cnpm</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-win10设置自动休眠和睡眠解决方法" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/17/win10设置自动休眠和睡眠解决方法/" class="article-date">
@@ -113,111 +214,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2018/12/17/win10设置自动休眠和睡眠解决方法/" data-id="cjs5cbae7000bs1gfbel0tlap" class="article-share-link">Share</a>
+      <a data-url="https://xubin.github.io/2018/12/17/win10设置自动休眠和睡眠解决方法/" data-id="cjs5cfkjx000b5ngfuo1jk2ev" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/win10/">win10</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-gradle" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/14/gradle/" class="article-date">
-  <time datetime="2018-02-14T04:55:51.000Z" itemprop="datePublished">2018-02-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/gradle/">gradle</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/14/gradle/">gradle</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="gradle"><a href="#gradle" class="headerlink" title="gradle"></a>gradle</h1><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="http://services.gradle.org/distributions/" target="_blank" rel="noopener">下载地址</a></p>
-<p><a href="https://gradle.org/install/" target="_blank" rel="noopener">官网</a></p>
-<p><a href="https://gradle.org/releases/" target="_blank" rel="noopener">各个版本说明</a></p>
-<h2 id="win10下安装和配置gradle"><a href="#win10下安装和配置gradle" class="headerlink" title="win10下安装和配置gradle"></a>win10下安装和配置gradle</h2><h3 id="sts安装gradle插件"><a href="#sts安装gradle插件" class="headerlink" title="sts安装gradle插件"></a>sts安装gradle插件</h3><p>Eclipse Marketplace =&gt; 搜索 buildship；然后安装</p>
-<h3 id="配置gradle"><a href="#配置gradle" class="headerlink" title="配置gradle"></a>配置gradle</h3><ul>
-<li><p>下载gradle （我用的是 4.8.1）</p>
-</li>
-<li><p>配置环境变量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GRADLE_HOME=D:\software\gradle\gradle-4.8.1</span><br><span class="line">path=%GRADLE_HOME%\bin</span><br><span class="line"># gradle -v 查看版本</span><br><span class="line"># 配置下载目录 也可参考修改 gradle文件</span><br><span class="line">GRADLE_USER_HOME=D:\software\gradle\cache</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>另外一种配置下载目录</p>
-<p>编辑GRADLE_HOME\bin\gradle </p>
-<p>查找# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.    </p>
-</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DEFAULT_JVM_OPTS="GRADLE_OPTS=-Dgradle.user.home=D:\software\gradle\cache"</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2018/02/14/gradle/" data-id="cjs5cbae00005s1gf2bbhf4w0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gradle配置/">gradle配置</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-node-cnpm" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/14/node-cnpm/" class="article-date">
-  <time datetime="2018-02-14T04:55:51.000Z" itemprop="datePublished">2018-02-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/node/">node</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/14/node-cnpm/">node安装cnpm配置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="node-cnpm"><a href="#node-cnpm" class="headerlink" title="node-cnpm"></a>node-cnpm</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm config ls </span><br><span class="line"></span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2018/02/14/node-cnpm/" data-id="cjs5cbae20007s1gfi4r8543l" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node安装cnpm/">node安装cnpm</a></li></ul>
 
     </footer>
   </div>
@@ -270,7 +270,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -283,15 +283,15 @@
       <ul>
         
           <li>
+            <a href="/2019/02/14/gradle/">gradle</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/14/node-cnpm/">node安装cnpm配置</a>
+          </li>
+        
+          <li>
             <a href="/2018/12/17/win10设置自动休眠和睡眠解决方法/">win10设置自动休眠和睡眠解决方法</a>
-          </li>
-        
-          <li>
-            <a href="/2018/02/14/gradle/">gradle</a>
-          </li>
-        
-          <li>
-            <a href="/2018/02/14/node-cnpm/">node安装cnpm配置</a>
           </li>
         
           <li>
