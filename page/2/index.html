@@ -70,6 +70,87 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-mac设置和常用命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/15/mac设置和常用命令/" class="article-date">
+  <time datetime="2019-02-15T02:39:51.000Z" itemprop="datePublished">2019-02-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mac/">mac</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/15/mac设置和常用命令/">mac常用命令和设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<ul>
+<li><a href="#1.mac设置">1.mac设置</a><ul>
+<li><a href="#1.1 Finder显示路径">1.1 Finder显示路径</a></li>
+<li><a href="#1.2 Mac显示隐藏的文件">1.2 Mac显示隐藏的文件</a></li>
+<li><a href="#1.3 Mac允许安装未知来源">1.3 Mac允许装未知来源</a></li>
+</ul>
+</li>
+<li><a href="#3.命令">3.命令</a><ul>
+<li><a href="#3.1 查看cpu命令">3.1 查看cpu命令</a></li>
+<li><a href="#3.2 命令说明">3.2 命令说明</a></li>
+<li><a href="#3.3 rm">3.3 rm命令</a></li>
+<li><a href="#3.4 cp命令">3.4 cp命令</a></li>
+<li><a href="#3.5 tar命令">3.5 tar命令</a></li>
+<li><a href="#3.6 tcp查看端口">3.6 tcp查看端口</a></li>
+<li><a href="#3.7 ls命令">3.7 ls命令</a><h1 id="1-mac设置"><a href="#1-mac设置" class="headerlink" title="1.mac设置"></a>1.mac设置</h1><h2 id="1-1-Finder显示路径"><a href="#1-1-Finder显示路径" class="headerlink" title="1.1 Finder显示路径"></a>1.1 Finder显示路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">设置显示路径</span></span><br><span class="line">defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE</span><br><span class="line"><span class="meta">#</span><span class="bash">还原</span></span><br><span class="line">defaults delete com.apple.finder _FXShowPosixPathInTitle</span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/xubin/xubin.github.io/blob/master/res/mac/Finder-1.png?raw=true" alt="Alt text" title="Optional title"></p>
+<h2 id="1-2-Mac显示隐藏的文件"><a href="#1-2-Mac显示隐藏的文件" class="headerlink" title="1.2 Mac显示隐藏的文件"></a>1.2 Mac显示隐藏的文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool true</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+<h2 id="1-3-Mac允许安装未知来源"><a href="#1-3-Mac允许安装未知来源" class="headerlink" title="1.3 Mac允许安装未知来源"></a>1.3 Mac允许安装未知来源</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo spctl –master-disable</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/xubin/xubin.github.io/blob/master/res/mac/Finder-2.png?raw=true" alt="Alt text" title="Optional title"></p>
+<h1 id="3-命令"><a href="#3-命令" class="headerlink" title="3.命令"></a>3.命令</h1><h2 id="3-1-查看cpu命令"><a href="#3-1-查看cpu命令" class="headerlink" title="3.1 查看cpu命令"></a>3.1 查看cpu命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl machdep.cpu</span><br></pre></td></tr></table></figure>
+<h2 id="3-2-命令说明"><a href="#3-2-命令说明" class="headerlink" title="3.2 命令说明"></a>3.2 命令说明</h2><ul>
+<li>~ 代表根目录</li>
+<li>touch </li>
+<li>source </li>
+<li>wq! </li>
+<li>q!</li>
+<li>echo 显示输出</li>
+<li>mac 查看cpu命令 sysctl machdep.cpu <h2 id="3-3-rm命令"><a href="#3-3-rm命令" class="headerlink" title="3.3 rm命令"></a>3.3 rm命令</h2> -r 向下递归 不管多少目录  rm  -rf<br> -f 直接强行删除 不做任何提示<h2 id="3-4-cp命令"><a href="#3-4-cp命令" class="headerlink" title="3.4 cp命令"></a>3.4 cp命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">拷贝文件夹 aa 到 bb</span></span><br><span class="line">cp  -r ~/Download/aa ~/Download/bb</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-5-tar命令"><a href="#3-5-tar命令" class="headerlink" title="3.5 tar命令"></a>3.5 tar命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">解压文件</span></span><br><span class="line">tar  -zxvf  FileName </span><br><span class="line"><span class="meta">#</span><span class="bash">压缩文件</span></span><br><span class="line">tar -zcxf   FileName.tar.gz  DirName</span><br></pre></td></tr></table></figure>
+<h2 id="3-6-tcp查看端口"><a href="#3-6-tcp查看端口" class="headerlink" title="3.6 tcp查看端口"></a>3.6 tcp查看端口</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看端口号</span></span><br><span class="line">lsof –i tcp:port</span><br></pre></td></tr></table></figure>
+<h2 id="3-7-ls命令"><a href="#3-7-ls命令" class="headerlink" title="3.7 ls命令"></a>3.7 ls命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">相当于ll命令 查看文件和文件夹</span></span><br><span class="line">ls –alf</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/shadowsocks/ShadowsocksX-NG" target="_blank" rel="noopener">1</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xubin.github.io/2019/02/15/mac设置和常用命令/" data-id="cjsst7z3f000ulrgfcofx44w3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac常用命令和设置/">mac常用命令和设置</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-gradle" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/02/14/gradle/" class="article-date">
@@ -116,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2019/02/14/gradle/" data-id="cjsaast4l0001rdgf5hhqjmyg" class="article-share-link">Share</a>
+      <a data-url="https://xubin.github.io/2019/02/14/gradle/" data-id="cjsst7z2r0002lrgfgtlyosti" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gradle配置/">gradle配置</a></li></ul>
@@ -159,65 +240,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2019/02/14/node-cnpm/" data-id="cjsaast4y000crdgfgtozb5q5" class="article-share-link">Share</a>
+      <a data-url="https://xubin.github.io/2019/02/14/node-cnpm/" data-id="cjsst7z3j000zlrgfzryvxaez" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node安装cnpm/">node安装cnpm</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-win10设置自动休眠和睡眠解决方法" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/17/win10设置自动休眠和睡眠解决方法/" class="article-date">
-  <time datetime="2018-12-17T09:05:51.000Z" itemprop="datePublished">2018-12-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/windows/">windows</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/17/win10设置自动休眠和睡眠解决方法/">win10设置自动休眠和睡眠解决方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Win10-设置自动休眠和睡眠解决方法"><a href="#Win10-设置自动休眠和睡眠解决方法" class="headerlink" title="Win10 设置自动休眠和睡眠解决方法"></a>Win10 设置自动休眠和睡眠解决方法</h1><ul>
-<li>修改注册表regedit</li>
-</ul>
-<blockquote>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\</p>
-<p>238C9FA8-0AAD-41ED-83F4-97BE242C8F20\</p>
-<p>7bc4a2f9-d8fc-4469-b07b-33eb785aaca0</p>
-</blockquote>
-<hr>
-<ul>
-<li>修改Attributes的值为2 </li>
-<li>进入高级电源设置，在睡眠选项中会出现“无人参与系统睡眠超时”，将默认的2分钟修改成你想要的时间</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xubin.github.io/2018/12/17/win10设置自动休眠和睡眠解决方法/" data-id="cjsaast52000irdgfysdnwbs3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/win10/">win10</a></li></ul>
 
     </footer>
   </div>
@@ -241,7 +267,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/gradle/">gradle</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mac/">mac</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/windows/">windows</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/gradle/">gradle</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mac/">mac</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/windows/">windows</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -251,7 +277,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gradle配置/">gradle配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTerm2/">iTerm2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac安装系统/">mac安装系统</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac常用命令和设置/">mac常用命令和设置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mddir生成目录/">mddir生成目录</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node安装cnpm/">node安装cnpm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tar/">tar</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win10/">win10</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gradle配置/">gradle配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTerm2/">iTerm2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac安装系统/">mac安装系统</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac常用命令和设置/">mac常用命令和设置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mddir生成目录/">mddir生成目录</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node安装cnpm/">node安装cnpm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tar/">tar</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win10/">win10</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -261,7 +287,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/gradle配置/" style="font-size: 10px;">gradle配置</a> <a href="/tags/iTerm2/" style="font-size: 10px;">iTerm2</a> <a href="/tags/mac安装系统/" style="font-size: 10px;">mac安装系统</a> <a href="/tags/mac常用命令和设置/" style="font-size: 10px;">mac常用命令和设置</a> <a href="/tags/mddir生成目录/" style="font-size: 10px;">mddir生成目录</a> <a href="/tags/node安装cnpm/" style="font-size: 10px;">node安装cnpm</a> <a href="/tags/tar/" style="font-size: 10px;">tar</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a>
+      <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gradle配置/" style="font-size: 10px;">gradle配置</a> <a href="/tags/iTerm2/" style="font-size: 10px;">iTerm2</a> <a href="/tags/mac安装系统/" style="font-size: 10px;">mac安装系统</a> <a href="/tags/mac常用命令和设置/" style="font-size: 10px;">mac常用命令和设置</a> <a href="/tags/mddir生成目录/" style="font-size: 10px;">mddir生成目录</a> <a href="/tags/node安装cnpm/" style="font-size: 10px;">node安装cnpm</a> <a href="/tags/tar/" style="font-size: 10px;">tar</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a>
     </div>
   </div>
 
@@ -270,7 +296,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -281,6 +307,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/03/04/git/">git多用户配置和全局设置</a>
+          </li>
         
           <li>
             <a href="/2019/02/18/mddir生成目录/">mddir生成目录</a>
@@ -296,10 +326,6 @@
         
           <li>
             <a href="/2019/02/14/gradle/">gradle</a>
-          </li>
-        
-          <li>
-            <a href="/2019/02/14/node-cnpm/">node安装cnpm配置</a>
           </li>
         
       </ul>
